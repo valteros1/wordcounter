@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Korrutaja</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script> 
+    function countWords() {
+      let input = document.getElementById("inputText").value;
+      let words = input.split(" ");
+      let count = words.length;;
+      document.getElementById("inputAnswere").value = count ;
+    } 
+    </script>
+  
+  </head>
+  <body>
+    <h1>Sõnalugeja</h1>
+    <div>
+    <label for="inputText">Kirjuta lause</label>
+    <input type="text" id="inputText">
+    <button onclick="countWords()">Count Words</button>
+  </div>
+    <br>
+    
+
+    <div id="result">
+      <label for="inputAnswere">Mitu sõna oli lauses </label>
+      <input type="text" id="inputAnswere">
+
+    </div>
+    
+  </body>
+</html>
